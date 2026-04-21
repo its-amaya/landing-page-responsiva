@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicie seu Projeto | Lumina Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo-lumina2.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lumina<span>Art</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <h2>Inicie seu <span>Projeto</span></h2>
+                <p style="text-align: center; margin-bottom: 40px;">Preencha as etapas abaixo para nos contar sua ideia.</p>
+
+                <form class="projeto-form">
+                    
+                    <div class="form-step">
+                        <h3>01. Informações Pessoais</h3>
+                        <input type="text" placeholder="Seu nome completo" required>
+                        <br>
+                        <input type="email" placeholder="Seu melhor e-mail" required>
+                    </div>
+
+                    <div class="form-step">
+                        <h3>02. Interesses para a ideia</h3>
+                        <select>
+                            <option value="web">Web Design</option>
+                            <option value="identidade">Identidade Visual</option>
+                            <option value="marketing">Marketing Digital</option>
+                            <option value="publi">Publicidade</option>
+                            <option value="nenhuma">Nenhuma</option>
+                        </select>
+                        <br>
+                        <textarea placeholder="Descreva sua ideia aqui..." rows="5"></textarea>
+                    </div>
+
+                    <div class="form-step">
+                        <h3>03. Referências</h3>
+                        <label for="file-upload" class="custom-file-upload">
+                            Clique para <span>anexar</span> arquivos de referência
+                        </label>
+                        <input id="file-upload" type="file" style="display:none;"/>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Solicitação</button>
+                </form>
+
+                <div class="whatsapp-box">
+                    <p style="text-align: center; margin-top: 50px;">Prefere algo mais rápido?</p>
+                    <a href="https://wa.me/+5582981449404" class="btn" style="background-color: #25d366; margin-top: 15px;">Fale conosco no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lumina Art Agência Criativa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
