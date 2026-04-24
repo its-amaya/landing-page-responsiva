@@ -3,7 +3,7 @@
     --text-color: #e1e1e6;
     --primary-color: #8257e5;
     --primary-hover: #996dff;
-    --card-bg: #202024;
+    --card-bg: #999999;
 }
 
 *    {
@@ -105,7 +105,7 @@ body {
 .services {
     padding: 100px 8%;
     text-align: center;
-    background-color: #1c1c1e;
+    background-color: --bg-color;
 }
 
 .services h2 {
@@ -121,7 +121,7 @@ body {
 }
 
 .card {
-    background-color: #202024;
+    background-color: --card-bg;
     padding: 40px 30px;
     border-radius: 8px;
     width: 300px;
@@ -142,7 +142,7 @@ body {
 /* --- Seção Sobre Nós --- */
 .about {
     padding: 100px 8%;
-    background-color: var(--card-bg); /*cor levemente diferente do fundo para destacar a seção */
+    background-color: var(--card-bg);
     text-align: center;
 }
 
