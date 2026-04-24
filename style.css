@@ -1,14 +1,12 @@
-/* --- Variáveis de Cor (Mude aqui para alterar o tema de todo o site!) --- */
 :root {
     --bg-color: #121214;
     --text-color: #e1e1e6;
-    --primary-color: #8257e5; /* Um roxo vibrante */
+    --primary-color: #8257e5;
     --primary-hover: #996dff;
     --card-bg: #202024;
 }
 
-/* --- Reset Básico --- */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +19,7 @@ body {
     color: var(--text-color);
 }
 
-/* --- Navegação --- */
+/* --- Navbar --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -60,7 +58,7 @@ body {
     color: var(--primary-color);
 }
 
-/* --- Seção Hero (Início) --- */
+/* --- Início --- */
 .hero {
     height: 100vh;
     display: flex;
