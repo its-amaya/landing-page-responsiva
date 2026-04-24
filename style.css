@@ -6,7 +6,7 @@
     --card-bg: #202024;
 }
 
-*{
+*    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -142,7 +142,7 @@ body {
 /* --- Seção Sobre Nós --- */
 .about {
     padding: 100px 8%;
-    background-color: var(--card-bg); /*cor levemente diferente do fundo para destacar a seção */
+    background-color: var(--bg-color); /*cor levemente diferente do fundo para destacar a seção */
     text-align: center;
 }
 
