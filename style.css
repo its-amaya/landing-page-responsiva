@@ -1,12 +1,12 @@
 :root {
     --bg-color: #121214;
     --text-color: #e1e1e6;
-    --primary-color: #8257e5;
-    --primary-hover: #996dff;
-    --card-bg: #29292e‎;
+    --primary-color: #8257e5; /* Roxo vibrante */
+    --primary-hover: #996dff; /* Roxo mais "normal" */
+    --card-bg: #202024;
 }
 
-*    {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,6 @@ body {
     color: var(--text-color);
 }
 
-/* --- Navbar --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +57,6 @@ body {
     color: var(--primary-color);
 }
 
-/* --- Início --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -84,7 +82,6 @@ body {
     color: #a8a8b3;
 }
 
-/* --- Botões --- */
 .btn {
     background-color: var(--primary-color);
     color: white;
@@ -98,14 +95,12 @@ body {
 
 .btn:hover {
     background-color: var(--primary-hover);
-    transform: translateY(-3px); /*elevação ao passar o mouse */
+    transform: translateY(-3px);
 }
 
-/* --- Seção de Serviços --- */
 .services {
     padding: 100px 8%;
     text-align: center;
-    background-color: --bg-color;
 }
 
 .services h2 {
@@ -117,7 +112,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /*efeito cards caindo para a linha de baixo em telas menores */
+    flex-wrap: wrap;
 }
 
 .card {
@@ -139,7 +134,6 @@ body {
     color: var(--primary-color);
 }
 
-/* --- Seção Sobre Nós --- */
 .about {
     padding: 100px 8%;
     background-color: var(--card-bg);
@@ -147,8 +141,8 @@ body {
 }
 
 .about-content {
-    max-width: 800px; /*limita a largura do texto para facilitar a leitura */
-    margin: 0 auto;   /*centraliza o bloco na tela */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-content h2 {
