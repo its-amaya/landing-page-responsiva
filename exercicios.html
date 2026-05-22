@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório JS | Lumina Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .exercicio-card {
+            background-color: var(--bg-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #2a2a2e;
+            text-align: left;
+        }
+        .resultado {
+            margin-top: 10px;
+            padding: 10px;
+            background: #1a1a1e;
+            border-left: 4px solid var(--primary-color);
+            color: var(--primary-hover);
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lumina<span>Art</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about">
+        <div class="about-content">
+            <h2>Laboratório de <span>Funções JS</span></h2>
+            
+            <div class="exercicio-card">
+                <h3>1. Maior e Menor</h3>
+                <p>Insira 5 números separados por vírgula:</p>
+                <input type="text" id="input1" placeholder="Ex: 10, 5, 20, 1, 8">
+                <button class="btn" onclick="executarMaiorMenor()">Calcular</button>
+                <div id="res1" class="resultado">Aguardando...</div>
+            </div>
+
+            <div class="exercicio-card">
+                <h3>2. Verificar Vogal</h3>
+                <input type="text" id="input2" maxlength="1" placeholder="Digite um caractere">
+                <button class="btn" onclick="executarVogal()">Verificar</button>
+                <div id="res2" class="resultado">Aguardando...</div>
+            </div>
+
+            <div class="exercicio-card">
+                <h3>3. Intervalo de Pares</h3>
+                <input type="number" id="input3_li" placeholder="Limite Inferior">
+                <input type="number" id="input3_ls" placeholder="Limite Superior">
+                <button class="btn" onclick="executarLimites()">Listar Pares</button>
+                <div id="res3" class="resultado">Aguardando...</div>
+            </div>
+
+            <div class="exercicio-card">
+                <h3>4. Ordenação Crescente</h3>
+                <input type="text" id="input4" placeholder="3 números (Ex: 30, 10, 20)">
+                <button class="btn" onclick="executarOrdem()">Ordenar</button>
+                <div id="res4" class="resultado">Aguardando...</div>
+            </div>
+
+            <div class="exercicio-card">
+                <h3>5 & 6. Positivo/Negativo e Par/Ímpar</h3>
+                <input type="number" id="input56" placeholder="Digite um número">
+                <button class="btn" onclick="executarBooleano()">Analisar</button>
+                <div id="res56" class="resultado">Aguardando...</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="funcoes.js"></script>
+</body>
+</html>
