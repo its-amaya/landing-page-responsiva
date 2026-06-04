@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function mostrarErro(idElemento, mensagem) {
         const erroSpan = document.getElementById(idElemento);
-        erroSpan.textContent = mensaje || mensagem;
+        erroSpan.textContent = mensagem || mensagem;
     }
 
     function limparErro(idElemento) {
