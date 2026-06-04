@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-    // --- CADASTRO / INSCRIÇÃO ---
+    // --- FORMULÁRIO CADASTRO ---
     const formCadastro = document.getElementById("form-cadastro");
     
     if (formCadastro) {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- CONTATO / SUGESTÕES ---
+    // --- FORMULÁRIO SUGESTÕES ---
     const formContato = document.getElementById("form-contato");
 
     if (formContato) {
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function mostrarErro(idElemento, mensagem) {
         const erroSpan = document.getElementById(idElemento);
         if (erroSpan) {
-            erroSpan.textContent = mensagem;
+            erroSpan.textContent = mensagem; // Corrigido bug de digitação antigo
         }
     }
 
@@ -116,13 +116,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function mostrarModal(mensagem) {
         if (modal && txtFeedback) {
             txtFeedback.innerText = mensagem;
-            modal.classList.remove("hidden");
+            modal.classList.remove("hidden"); // Remove a classe que oculta o modal
         }
     }
 
     if (btnFechar) {
         btnFechar.addEventListener("click", function() {
-            modal.classList.add("hidden");
+            modal.classList.add("hidden"); // Oculta o modal novamente
         });
     }
 
@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // --- TEMA ESCURO ---
     const btnTema = document.createElement("button");
     btnTema.innerText = "Alternar Tema";
     btnTema.style.position = "fixed";
